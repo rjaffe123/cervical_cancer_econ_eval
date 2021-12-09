@@ -8,3 +8,7 @@
 - 'final project_v1.R' --> markov model
 - 'decision tree final.R' --> decision tree
 - 'By age Transition Probabilities.xlsx' --> inputs for markov model
+
+#### To Run:
+1. run Decision tree first with specified probabilities to update the inputs for the markov model
+2. run markov model file
