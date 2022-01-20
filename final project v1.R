@@ -411,7 +411,6 @@ res_psa_data1_hpv <- res_psa_data1_hpv %>% rename(strat_hpv = ".strategy_names")
 full_res <- res_psa_data1_hpv %>% cbind(res_psa_data1_pap)
 full_res <- full_res %>% mutate(icer = (Cost_hpv-Cost_pap)/(effect_hpv-effect_pap))
 full_res <- full_res %>% mutate(incremental_cost = (Cost_pap-Cost_hpv)/495777, incremental_effect = (effect_pap-effect_hpv)/495777)
-full_res1 <- full_res %>% mutate(incremental_effect1 = rnorm(5000, 0, 2))
 baseline_point <- data.frame(incremental_effect = 1.310486, incremental_cost =  1477.25)
 
 full_res$fitted <- full_res$incremental_effect*50000
